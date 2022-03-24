@@ -13,9 +13,10 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="625dp"
+            android:layout_height="0dp"
             android:src="@drawable/OIP"
-            android:scaleType="centerCrop">
+            android:scaleType="centerCrop"
+            android:layout_weight="1">
         </ImageView>
 
         <TextView
@@ -24,7 +25,8 @@
             android:text="You're Invited!"
             android:textColor="@color/white"
             android:background="#0d9f3f"
-            android:textSize="40sp">
+            android:textSize="50sp"
+            android:layout_weight="0">
         </TextView>
 
         <TextView
@@ -33,11 +35,15 @@
             android:text="Bonfire at the beach"
             android:textColor="@color/white"
             android:background="#8c1567"
-            android:textSize="40sp">
+            android:textSize="40sp"
+            android:layout_weight="0">
         </TextView>
 
 
     </LinearLayout>
+
+
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
