@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="90dp"
+        tools:context=".MainActivity">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Team_a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="90sp">
+
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:onClick="Team_A_threePointsMethod"
+                android:padding="15dp"
+                android:text="+3 Points"
+                android:layout_margin="8dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:onClick="Team_A_twoPointsMethod"
+                android:padding="15dp"
+                android:text="+2 Points"
+                android:layout_margin="8dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Team_A_freePointsMethod"
+                android:padding="15dp"
+                android:text="FREE POINT"
+                android:layout_margin="8dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:gravity="center">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/Team_b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="90sp">
+
+            </TextView>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:onClick="Team_B_threePointsMethod"
+                android:padding="15dp"
+                android:text="+3 Points"
+                android:layout_margin="8dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:onClick="Team_B_twoPointsMethod"
+                android:padding="15dp"
+                android:text="+2 Points"
+                android:layout_margin="8dp">
+
+            </Button>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="Team_B_freePointsMethod"
+                android:padding="15dp"
+                android:text="FREE POINT"
+                android:layout_margin="8dp">
+
+            </Button>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="40dp"
+
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:text="RESET"
+        android:id="@+id/reset_button"
+        android:onClick="reset">
+
+    </Button>
+</RelativeLayout>
